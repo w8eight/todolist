@@ -7,7 +7,7 @@ class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self):
 		#Cannot add firefox binary to PATH (no admin privileges)
-		self.binary = FirefoxBinary(r'C:\Users\w23209\AppData\Local\Mozilla Firefox\firefox.exe')
+		self.binary = FirefoxBinary(firefox_path = r'C:\Users\w23209\AppData\Local\Mozilla Firefox\firefox.exe')
 		self.browser = webdriver.Firefox(firefox_binary=self.binary)
 
 	def tearDown(self):
