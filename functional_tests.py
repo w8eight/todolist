@@ -6,7 +6,7 @@ import unittest
 class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self):
-		#Cannot add firefox binary to PATH (no admin privileges)
+		#Cannot add firefox binary to PATH (no admin privileges on employee computer)
 		self.binary = FirefoxBinary(firefox_path = r'C:\Users\w23209\AppData\Local\Mozilla Firefox\firefox.exe')
 		self.browser = webdriver.Firefox(firefox_binary=self.binary)
 
